@@ -35,7 +35,7 @@ let currentIndex = 0;
 
 carts.forEach((item) => {
     item.addEventListener('click',(e)=>{
-        layer.classList.remove('hidden')
+        layer.style.display = "flex";
         cart.style.backgroundImage = `url(/${e.target.getAttribute('src')})`
         currentIndex = carts.indexOf(e.target)
     })
@@ -51,7 +51,8 @@ btnRight.addEventListener('click', ()=>{
 // Close
 btnClose.addEventListener('click',close)
 function close(){
-    layer.classList.add('hidden')
+    layer.style.display = "none";
+
 }
 // NEXT or PREV Function
 function nextORprev( statusIndex, condition , result ){

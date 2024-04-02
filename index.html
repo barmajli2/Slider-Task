@@ -7,8 +7,6 @@
     <meta name="keywords" content="Babies , Baby" />
     <meta name="rating" content="General" />
     <title>Beautiful Babies</title>
-    <!-- Tailwind CDN Style -->
-    <script src="https://cdn.tailwindcss.com"></script>
     <!-- Font Awesome CDN -->
     <link
       rel="stylesheet"
@@ -21,91 +19,41 @@
   </head>
   <body>
     <main class="">
-      <section id="slideOne" class="py-12">
-        <div id="carts" class="container mx-auto">
-          <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-            <figure
-              id="figure"
-              class="cursor-pointer max-h-[250px] shadow-lg rounded-3xl overflow-hidden"
-            >
-              <img
-                class="min-h-[250px]"
-                src="images/1-baby.jpg"
-                alt="baby Image"
-              />
-            </figure>
-            <figure
-              id="figure"
-              class="cursor-pointer max-h-[250px] shadow-lg rounded-3xl overflow-hidden"
-            >
-              <img
-                class="min-h-[250px]"
-                src="images/2-baby.jpg"
-                alt="baby Image"
-              />
-            </figure>
-            <figure
-              id="figure"
-              class="cursor-pointer max-h-[250px] shadow-lg rounded-3xl overflow-hidden"
-            >
-              <img
-                class="min-h-[250px]"
-                src="images/3-baby.jpg"
-                alt="baby Image"
-              />
-            </figure>
-            <figure
-              id="figure"
-              class="cursor-pointer max-h-[250px] shadow-lg rounded-3xl overflow-hidden"
-            >
-              <img
-                class="min-h-[250px]"
-                src="images/4-baby.jpg"
-                alt="baby Image"
-              />
-            </figure>
-            <figure
-              id="figure"
-              class="cursor-pointer max-h-[250px] shadow-lg rounded-3xl overflow-hidden"
-            >
-              <img
-                class="min-h-[250px]"
-                src="images/5-baby.jpg"
-                alt="baby Image"
-              />
-            </figure>
-            <figure
-              id="figure"
-              class="cursor-pointer max-h-[250px] shadow-lg rounded-3xl overflow-hidden"
-            >
-              <img
-                class="min-h-[250px]"
-                src="images/6-baby.jpg"
-                alt="baby Image"
-              />
-            </figure>
-          </div>
+      <section id="slideOne">
+        <div id="carts" class="container">
+          <figure id="figure">
+            <img src="images/1-baby.jpg" alt="baby Image" />
+          </figure>
+          <figure id="figure">
+            <img src="images/2-baby.jpg" alt="baby Image" />
+          </figure>
+          <figure id="figure">
+            <img src="images/3-baby.jpg" alt="baby Image" />
+          </figure>
+          <figure id="figure">
+            <img src="images/4-baby.jpg" alt="baby Image" />
+          </figure>
+          <figure id="figure">
+            <img src="images/5-baby.jpg" alt="baby Image" />
+          </figure>
+          <figure id="figure">
+            <img src="images/6-baby.jpg" alt="baby Image" />
+          </figure>
         </div>
         <!-- Overlay -->
-        <div
-          id="layer"
-          class="hidden flex items-center justify-center fixed top-0 left-0 right-0 bottom-0"
-        >
-          <div
-            id="cart"
-            class="bg-cover bg-center w-[800px] h-[500px] relative flex items-center justify-between"
-          >
+        <div id="layer">
+          <div id="cart">
             <i
               id="left"
-              class="fa-solid fa-arrow-left p-2 text-2xl hover:text-3xl cursor-pointer"
+              class="fa-solid fa-arrow-left"
             ></i>
             <i
               id="right"
-              class="fa-solid fa-arrow-right p-2 text-2xl hover:text-3xl cursor-pointer"
+              class="fa-solid fa-arrow-right"
             ></i>
             <i
               id="close"
-              class="fa-solid fa-xmark absolute top-0 right-0 p-2 text-2xl text-red-500 hover:text-3xl cursor-pointer"
+              class="fa-solid fa-xmark"
             ></i>
           </div>
         </div>
