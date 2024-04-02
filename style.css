@@ -14,7 +14,6 @@
 section#slideOne {
     background-color: #00DBDE;
     background-image: linear-gradient(293deg, #00DBDE 0%, #FC00FF 50%, #bfbfbf 100%);
-    height: 100vh;
     padding-block: 2rem;
 }
 
