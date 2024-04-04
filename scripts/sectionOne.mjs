@@ -5,11 +5,12 @@ export const sectionOne = () => {
     let imageList = document.querySelector('.slider');
     const maxScrollLeft = imageList.scrollWidth - imageList.clientWidth;
     const clientWidth = imageList.clientWidth;
-
+    
     // تنفيذ العناصر
     btnControl.forEach((arrow) => {
         arrow.addEventListener('click', (e) => {
             handelArrow(e.target.id);
+            clearInterval(slidMov)
         });
     });
 
@@ -20,7 +21,13 @@ export const sectionOne = () => {
         // حساب المسافة المناسبة للتمرير
         let scrollAmount = clientWidth * dir;
         imageList.scrollBy({ left: scrollAmount, behavior: "smooth" });
+        // عشان اتحكم في دوران السليدر
+        if (imageList.scrollLeft >= maxScrollLeft - scrollAmount) {
+            imageList.scrollLeft = 1
+        }
     };
+    let slidMov  = setInterval(handelArrow,2000)
+
 
     // تحديث ألوان الأزرار
     const handleSlideButtons = () => {
