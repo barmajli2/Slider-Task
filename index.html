@@ -15,11 +15,54 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style/header.css">
+    <link rel="stylesheet" href="style/sectionOne.css">
+    <link rel="stylesheet" href="style/sectionTwo.css">
+    <link rel="stylesheet" href="style/globle.css" />
   </head>
   <body>
-    <main class="">
-      <section id="slideOne">
+    <header>
+      <nav>
+        <ul class="">
+          <li data-target="slidOne"class="active" >Slide One</li>
+          <li data-target="slidTwo">Slide Two</li>
+        </ul>
+        <div id="menu-bars">
+          <i class="fa-solid fa-bars"></i>
+          <i class="fa-solid fa-xmark hidden"></i>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section id="wrapper"  data-target="slidOne">
+        <div class="slider">
+          <div class="control">
+            <button id="circle-left" class="fa-solid fa-circle-chevron-left"></button>
+            <button id="circle-right" class="fa-solid fa-circle-chevron-right"></button>
+          </div>
+          <img src="images/1-baby.jpg" alt="baby Image" />
+          <img src="images/2-baby.jpg" alt="baby Image" />
+          <img src="images/3-baby.jpg" alt="baby Image" />
+          <img src="images/4-baby.jpg" alt="baby Image" />
+          <img src="images/5-baby.jpg" alt="baby Image" />
+          <img src="images/6-baby.jpg" alt="baby Image" />
+          <img src="images/7-baby.jpg" alt="baby Image" />
+          <img src="images/3-baby.jpg" alt="baby Image" />
+          <img src="images/4-baby.jpg" alt="baby Image" />
+          <img src="images/5-baby.jpg" alt="baby Image" />
+          <img src="images/1-baby.jpg" alt="baby Image" />
+          <img src="images/2-baby.jpg" alt="baby Image" />
+          <img src="images/3-baby.jpg" alt="baby Image" />
+          <img src="images/4-baby.jpg" alt="baby Image" />
+          <img src="images/5-baby.jpg" alt="baby Image" />
+          <img src="images/6-baby.jpg" alt="baby Image" />
+          <img src="images/7-baby.jpg" alt="baby Image" />
+          <img src="images/3-baby.jpg" alt="baby Image" />
+          <img src="images/4-baby.jpg" alt="baby Image" />
+          <img src="images/5-baby.jpg" alt="baby Image" />
+        </div>
+      </section>
+      <section id="sectionTwo" data-target="slidTwo">
         <div id="carts" class="container">
           <figure id="figure">
             <img src="images/1-baby.jpg" alt="baby Image" />
@@ -43,22 +86,13 @@
         <!-- Overlay -->
         <div id="layer">
           <div id="cart">
-            <i
-              id="left"
-              class="fa-solid fa-arrow-left"
-            ></i>
-            <i
-              id="right"
-              class="fa-solid fa-arrow-right"
-            ></i>
-            <i
-              id="close"
-              class="fa-solid fa-xmark"
-            ></i>
+            <i id="left" class="fa-solid fa-arrow-left"></i>
+            <i id="right" class="fa-solid fa-arrow-right"></i>
+            <i id="close" class="fa-solid fa-xmark"></i>
           </div>
         </div>
       </section>
     </main>
-    <script src="main.js"></script>
+    <script src="scripts/main.js" type="module"></script>
   </body>
 </html>
